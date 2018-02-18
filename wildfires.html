@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>Its Story</title>
+        <meta charset = "UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="behavior.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Codystar%7CLora" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    </head>
+
+    <body class="works_on_smartphone">
+        
+        <!-- FACEBOOK PLUGIN -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <!-- SHARE BUTTONS, LOGO, & NAVIGATION LINKS -->
+        <header>
+            <div class="right">
+                <div class="fb-share-button" data-href="http://213.167.240.218/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F213.167.240.218%2F&amp;src=sdkpreparse">Share</a></div>
+                <br>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            
+            <a href="index.html"><img src="icon.png" alt="[Icon]"></a><br><br><br>
+                
+            <div class="navbar">
+                <ul>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/index.html">Panic</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/wildfires.html">Wildfires</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/theirstories.html">Stories</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/prepare.html">Prepare</a></li>   
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/tweets.html">Media</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/sr.html">SR</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            
+            <!-- MAIN CONTENT -->
+            <article>
+                                
+                <h1 class="title_box" id="title_text">Wildfire's Story</h1> 
+                
+                <!-- INTRO TEXT TO BE ANIMATED -->
+                <div id="str"></div>
+                
+                <script>
+                var string = "On October 9th, 2017 in Northern California, raging wildfires engulfed cities and devoured wineries, businesses, and homes. Multiple fires started simultaneously across Napa Valley, Santa Rosa, and Sonoma. Firefighters, the National Guard, and tanks from neighboring cities came to battle the flames. As of October 30th, 2017, three of these fires are still burning...";
+    
+                var str = string.split("");
+                var el = document.getElementById('str');
+    
+                (function animate() {
+                    str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
+                    var running = setTimeout(animate, 90);
+                })();       
+                </script>
+                
+                <br>
+                
+                <!-- VIDEO -->
+                <video autoplay loop muted playsinline> <source src="https://i.imgur.com/aHRUnnx.mp4" type="video/mp4"></video>
+                <p><span class="reference">Video from Wix Forest Clouds</span></p>
+                
+                <hr>
+                
+                <h2>The most devastating Northern California wildfires:</h2>
+                
+                <p>See how the fire closest to my house all started and grew <a href="https://www.nytimes.com/interactive/2017/10/21/us/california-fire-damage-map.html" target="_blank" rel="noopener noreferrer">hour by hour</a>  from <span class="reference">The New York Times</span>. See how some fires laid <a href="https://i.imgur.com/etwuPLI.jpg" target="_blank" rel="noopener noreferrer"> mass destruction and suffering</a> according to <span class="reference">Cal Fire, Chronicle Reporting.</span>  </p>
+                
+                <!-- EMBEDDED PERSONALIZED CINCOPA WIDGET GALLERY -->
+                <div id="cp_widget_f3888490-762d-4abc-9205-5e58281c8182">...</div><script type="text/javascript">
+                var cpo = []; cpo["_object"] ="cp_widget_f3888490-762d-4abc-9205-5e58281c8182"; cpo["_fid"] = "AAMAxFe_SaVx";
+                var _cpmp = _cpmp || []; _cpmp.push(cpo);
+                (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+                cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+                var c = document.getElementsByTagName("script")[0];
+                c.parentNode.insertBefore(cp, c); })(); </script>
+                <p><span class="reference">Photos from WIRED, New York Times, Press Democrat; Gallery powered by Cincopa Widget</span></p>
+                
+                <hr>
+                
+                <h3>Donate</h3>
+
+                <!-- ANCHOR IMAGE -->
+                <a href="https://www.redwoodcu.org/northbayfirerelief" target="_blank" rel="noopener noreferrer" class="img"><img src="https://i.imgur.com/E920kBv.jpg" alt="[Link to donate]"></a>
+                
+            </article>
+            
+            <!-- DISQUS -->
+            <aside>
+                <div id="disqus_thread"></div><script>
+                var disqus_config = function () {
+                    this.page.url = 'http://213.167.240.218/wildfires.html';  
+                    this.page.identifier = '/wildfires.html'; 
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://melissa-ng.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </aside>
+            
+        </main>
+
+        <footer>
+            <hr>
+            <p id="forHolberton">
+            Made by <a href="https://twitter.com/MelissaNg__" target="_blank">Melissa Ng</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a></p>
+        </footer>
+        
+    <script id="dsq-count-scr" src="//melissang.disqus.com/count.js" async></script>
+    </body>
+
+</html>
