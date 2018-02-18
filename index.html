@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>Melissa Ng</title>
+        <meta charset = "UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="behavior.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Codystar%7CLora" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    </head>
+    
+    <body class="works_on_smartphone">
+        
+        <!-- FACEBOOK PLUGIN -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <!-- SHARE BUTTONS, LOGO, & NAVIGATION LINKS -->
+        <header>
+            <div class="right">
+                <div class="fb-share-button" data-href="http://213.167.240.218/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F213.167.240.218%2F&amp;src=sdkpreparse">Share</a></div>
+                <br>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            
+            <a href="index.html"><img src="icon.png" alt="[Icon]"></a><br><br><br>
+                
+            <div class="navbar">
+                <ul>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/index.html">Panic</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/wildfires.html">Wildfires</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/theirstories.html">Stories</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/prepare.html">Prepare</a></li>   
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/tweets.html">Media</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/sr.html">SR</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            
+            <!-- MAIN CONTENT -->
+            <article>
+                
+                <h1 class="title_box" id="title_text">My Story</h1> 
+                
+                <p><span class="dialogue">There's a fire in the North Bay,"</span> a friend texts us at 2am. Huh? Why is Sheila texting us the news I wonder. I go back to bed. At 3am the doorbell rings. I must be dreaming. I go back to bed. At 5am the phone rings. <span class="dialogue">"There's a fire. We need to get out!"</span> Christian says. What? I don't smell smoke. There's no fire in the house. This time I get up and brush my teeth. The doorbell rings again. Sebastian says, <span class="dialogue">Hey, I rang your doorbell earlier at 3am."</span> Ok... What's happening?!
+                </p>
+                
+                <!-- ANCHOR IMAGE -->
+                <a href="http://www.pressdemocrat.com/news/7507522-181/fire-destroys-paradise-ridge-winery?ref=related&artslide=17" target="_blank" rel="noopener noreferrer" class="img"><img src="panic.jpg" title = "Click to see news from The Press Democrat" alt = "[Image]"></a>
+                <p><span class="reference">Photo from The Press Democrat</span></p> <br>
+                
+                <p>
+                Earlier at 2am, Sebastian was awoken and evacuated from Fountaingrove Inn with just himself, his passport, and his ID. Twenty minutes later, his hotel burned down. For the next few days, multiple wildfires will rip through Northern California (hitting Santa Rosa, Napa Valley, and Sonoma) and become known as the sixth deadliest blaze in California history according to <span class="reference">npr.org.</span> 
+                </p> 
+                    
+                <hr>
+                
+                <h3 class="subheading">Fear and Evacuation</h3>
+                
+                <p>
+                On Monday October 9, 2017, my fiance and I wake another roommate, watch smoke clouds fill the air in a distance, rush back and forth to grab important documents, frantically update awoken and concerned neighbors on the street of our escape route, and then drive away with our roommates, in fears of the fires jumping onto the highway and trapping us in. We had no time to research how close the fire was or what was really happening. 
+                </p>
+                
+                <!-- SMART THUMBNAIL THAT ENLARGES UPON A CLICK -->   
+                <p>Click to see where we were.</p><img id="smart_thumbnail" class="small" src="map_of_fires_and_my_house.png" title = "Map of fires and my house" alt = "[Image to enlarge]">
+                
+                <hr>
+                
+                <h2 class="subheading">Constant Check In</h2>
+                <p>
+                Over the next few days of my life, I lived hour by hour. Worried about the house my fiance and I bought just a little over a year ago, I was constantly checking news online, listening to radio stations, and searching for real-time fire maps. I lived day by day, finding shelter at friends' houses in Fremont, San Rafael, and Rohnert Park. Lived meal by meal. 
+                </p> <br>
+                                
+                <!-- LINKS TO /TWEETS.HTML PAGE --> 
+                <a href="tweets.html"><p class="link_nav">read tweets</p></a>
+                    
+                <!-- MISIC -->
+                <br><audio id="audio" src="Heartbreaking.mp3" autoplay loop>
+                Sorry, your browser does not support the audio element.
+                </audio>
+                <button>Play/Pause Music</button>
+                               
+            </article>
+            
+            <!-- DISQUS -->
+            <aside>
+                <div id="disqus_thread"></div><script>
+                var disqus_config = function () {
+                    this.page.url = 'http://213.167.240.218/index.html';  
+                    this.page.identifier = '/index.html'; 
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://melissa-ng.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </aside>
+            
+        </main>
+
+        <footer>
+            <hr>
+            <p id="forHolberton">
+            Made by <a href="https://twitter.com/MelissaNg__" target="_blank">Melissa Ng</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a></p>
+        </footer>
+        
+    <script id="dsq-count-scr" src="//melissang.disqus.com/count.js" async></script>
+    </body>
+
+</html>
