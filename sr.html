@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>Remembering SR</title>
+        <meta charset = "UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="behavior.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Codystar%7CLora" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    </head>
+
+    <body class="works_on_smartphone">
+        
+        <!-- FACEBOOK PLUGIN -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <!-- SHARE BUTTONS, LOGO, & NAVIGATION LINKS -->
+        <header>
+            <div class="right">
+                <div class="fb-share-button" data-href="http://213.167.240.218/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F213.167.240.218%2F&amp;src=sdkpreparse">Share</a></div>
+                <br>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            
+            <a href="index.html"><img src="icon.png" alt="[Icon]"></a><br><br><br>
+                
+            <div class="navbar">
+                <ul>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/index.html">Panic</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/wildfires.html">Wildfires</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/theirstories.html">Stories</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/prepare.html">Prepare</a></li>   
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/tweets.html">Media</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/sr.html">SR</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            
+            <!-- MAIN CONTENT --> 
+            <article>
+
+                <h1 class="title_box" id="title_text">Remembering Santa Rosa: <br>The city that changed my life</h1>
+                
+                <!-- MY PHOTO --> 
+                <img id="myPhoto" src="me.jpg" alt="[My photo]"> <br><br>
+                
+                <!-- TEXT --> 
+                <p>
+                Being my home for the last two years, it’s a relaxing, stress-free city where friendly neighbors knew each other's cats and dogs as they sneaked along into each other’s backyards. Just an hour’s drive North from San Francisco, Santa Rosa is the heart of it all. The East surrounds us with Napa Valley, wine country, and impressive restaurants. The North inhabits Keysight Technologies, Lassen National Park, Mount Shasta, and stunning waterfalls. The West enchants us with it’s breathtaking coastline, Bodega Bay, and Russian River. The South livens up with Mount Tam, San Francisco, Silicon Valley, and much more.
+                </p>
+                
+                <p> 
+                This small city, tucked away, was where I found some of my most inspirational friends and learned that life is limitless. This is where I developed my interests in software engineering, app development, and artificial intelligence. This is where I've been pursuing my higher calling. There’s still so many places I haven’t had the chance to visit in Santa Rosa and the wine country: Willie’s Wine Bar (with it’s great Yelp reviews), Annadel State Park... This week, they’ve all burned down. Heart breaking and heart wrenching. In the city that changed my life.
+                </p>
+
+                <!-- PERSONALIZED GOOGLE MAP --> 
+                <iframe
+                width="300"
+                height="200"
+                src="https://maps.google.com/maps?q=38.435022,-122.672281&hl=en&z=7&output=embed">
+                </iframe>
+                
+                <!-- PHOTO --> 
+                <img src="https://i.imgur.com/IEJaS3m.jpg" alt="[Image]" title="The most stunning grapes"><br><br>
+                
+                <!-- MISIC -->
+                <audio id="audio" src="Stopping_By_the_Inn.mp3" autoplay loop>
+                    Sorry, your browser does not support the audio element.
+                </audio>
+                <button>Play/Pause Music</button>
+                
+            </article>
+            
+            <!-- DISQUS -->
+            <aside>
+                <div id="disqus_thread"></div><script>
+                var disqus_config = function () {
+                    this.page.url = 'http://213.167.240.218/santarosa.html';  
+                    this.page.identifier = '/santarosa.html'; 
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://melissa-ng.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </aside>
+            
+        </main>
+
+        <footer>
+            <hr>
+            <p id="forHolberton">
+            Made by <a href="https://twitter.com/MelissaNg__" target="_blank">Melissa Ng</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a></p>
+        </footer>
+        
+    <script id="dsq-count-scr" src="//melissang.disqus.com/count.js" async></script>
+    </body>
+
+</html>
