@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>Their Stories</title>
+        <meta charset = "UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="behavior.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Codystar%7CLora" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    </head>
+
+    <body class="works_on_smartphone">
+        
+        <!-- FACEBOOK PLUGIN -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <!-- SHARE BUTTONS, LOGO, & NAVIGATION LINKS -->
+        <header>
+            <div class="right">
+                <div class="fb-share-button" data-href="http://213.167.240.218/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F213.167.240.218%2F&amp;src=sdkpreparse">Share</a></div>
+                <br>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            
+            <a href="index.html"><img src="icon.png" alt="[Icon]"></a><br><br><br>
+                
+            <div class="navbar">
+                <ul>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/index.html">Panic</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/wildfires.html">Wildfires</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/theirstories.html">Stories</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/prepare.html">Prepare</a></li>   
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/tweets.html">Media</a></li>
+                <li class="nav"><a href="https://melissan.github.io/Wildfire/sr.html">SR</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            
+            <!-- MAIN CONTENT --> 
+            <article>
+
+                <h1 class="title_box" id="title_text">Their Stories</h1>
+                
+                <!-- INTERACTIVE ACTIVITY: STORIES GENERATOR --> 
+                <button class="printStory">Read another</button><br>
+                
+                <img src="quotation.JPG" alt=[Quotation]>
+                <p class ="quote" id ="quote">I had gone by, and she was down there [by the car]. If I had known, I would have gone down there and died with her. She was the love of my life. - George Powell</p>
+                <p class ="source" id ="source">Callahan & Morris, The Press Democrat, October 13, 2017</p>           
+                
+            </article>
+            
+            <!-- DISQUS -->
+            <aside>
+                <div id="disqus_thread"></div><script>
+                var disqus_config = function () {
+                    this.page.url = 'http://213.167.240.218/santarosa.html';  
+                    this.page.identifier = '/santarosa.html'; 
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://melissa-ng.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </aside>
+            
+        </main>
+
+        <footer>
+            <hr>
+            <p id="forHolberton">
+            Made by <a href="https://twitter.com/MelissaNg__" target="_blank">Melissa Ng</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a></p>
+        </footer>
+        
+    <script id="dsq-count-scr" src="//melissang.disqus.com/count.js" async></script>
+    </body>
+
+</html>
